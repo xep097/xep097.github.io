@@ -4,17 +4,21 @@
     <meta charset="utf-8">
     <title>Ramstaddal</title>
     <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   </head>
   <body>
     <div id="logo">
+      <button onclick="hideSidebar();" id="navb" type="button" name="button">
+        <img src="icon/logo.png" alt="" />
+      </button>
       <h1>Ramstaddal.net</h1>
     </div>
     <div id="nav">
-      <a href="https://ramstaddal.net/next"><img src="icon/home.png" alt="" /><span>Startside</span></a>
-      <a href="nyheter"><img src="icon/logo.png" alt="" /><span>Nyheter</span></a>
-      <a href="kalender"><img src="icon/logo.png" alt="" /><span>Kalender</span></a>
-      <a href="omramstaddal"><img src="icon/logo.png" alt="" /><span>Om Ramstaddal</span></a>
-      <a class="nav_selected" href="bilder"><img src="icon/logo.png" alt="" /><span>Bilder</span></a>
+      <a href="index.html"><img src="icon/home.png" alt="" /><span>Startside</span></a>
+      <a href="nyheter.html"><img src="icon/logo.png" alt="" /><span>Nyheter</span></a>
+      <a href="kalender.html"><img src="icon/logo.png" alt="" /><span>Kalender</span></a>
+      <a href="omramstaddal.html"><img src="icon/logo.png" alt="" /><span>Om Ramstaddal</span></a>
+      <a class="nav_selected" href="bilder.html"><img src="icon/logo.png" alt="" /><span>Bilder</span></a>
     </div>
     <div id="main">
       <div class="in_main">
@@ -27,3 +31,18 @@
     </div>
   </body>
 </html>
+<script type="text/javascript">
+  var sidebar = document.getElementById('nav');
+  var main = document.getElementById('main');
+  function hideSidebar() {
+    if (main.style.height === '0px') {
+      sidebar.style.height = '0px';
+      main.style.height = '100%';
+      main.style.marginTop = '0px';
+    } else {
+      sidebar.style.height = '100%';
+      main.style.height = '0px';
+      main.style.marginTop = '100%';
+    }
+  }
+</script>
