@@ -11,12 +11,11 @@
   html, body {
     float: left;
     width: 100%;
-    height: 100%;
   }
   html {
     background: black;
     color: white;
-    background-image: url('photo.png');
+    background-image: url('photo2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -61,6 +60,7 @@
       font-size: 64px;
       text-shadow: inner 0 0 10px black;
       padding-left: 10px;
+      font-family: 'Play', sans-serif;
     }
     #logo h1 {
       -webkit-background-clip: text;
@@ -160,6 +160,14 @@
       padding-top: 10px;
       padding-left: 10px;
     }
+    .in_main a {
+      width: calc(100% - 10px);
+      float: left;
+      font-size: 32px;
+      padding-top: 10px;
+      padding-left: 10px;
+      color: #119955;
+    }
     .in_main img {
       float: left;
       width: calc(50% - 30px);
@@ -214,6 +222,7 @@
       background-repeat: no-repeat;
       background-size: 100% 100%;
       padding-left: 0px;
+      font-family: 'Play', sans-serif;
     }
       @-webkit-keyframes LOGO {
       0%, 1% {
@@ -234,11 +243,14 @@
       float: left;
       width: 260px;
       background: rgba(0, 0, 0, 0.5);
-      min-height: calc(100% - 30% - 10px);
+      min-height: 70vh;
+      max-height: 100vh;
       padding-top: 10px;
       margin-left: calc(50% - 630px);
       border-top-left-radius: 10px;
       display: block;
+      position: sticky;
+      top: 100px;
     }
     #nav a {
       float: left;
@@ -274,8 +286,9 @@
       float: left;
       width: 1000px;
       background: rgba(0, 0, 0, 0.5);
-      min-height: calc(100% - 30%);
       border-top-right-radius: 10px;
+      min-height: 70vh;
+      padding-bottom: 10px;
     }
     .in_main {
       float: left;
@@ -300,6 +313,14 @@
       font-size: 16px;
       padding-top: 10px;
       padding-left: 10px;
+    }
+    .in_main a {
+      width: calc(100% - 10px);
+      float: left;
+      font-size: 16px;
+      padding-top: 10px;
+      padding-left: 10px;
+      color: #119955;
     }
     .in_main img {
       float: left;
